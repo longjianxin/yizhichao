@@ -56,7 +56,7 @@ $(function(){
 		}
 	});
 	
-	var tophtml="<div id=\"izl_rmenu\" class=\"izl-rmenu\"><a href=\"tencent://Message/?Uin=361145187&websiteName=bdhongshan.com=&Menu=yes\" class=\"btn btn-qq\"></a><div class=\"btn btn-wx\"><img class=\"pic\" src=\""+static_base_url+"static/image/lib/weixin.jpg\" onclick=\"window.location.href=\'http://shouyintai.bdhongshan.com\'\"/></div><div class=\"btn btn-phone\"><div class=\"phone\">13430332489</div></div><div class=\"btn btn-top\"></div></div>";
+	var tophtml="<div id=\"izl_rmenu\" class=\"izl-rmenu\"><a href=\"tencent://Message/?Uin=361145187&websiteName=yizhichao.club=&Menu=yes\" class=\"btn btn-qq\"></a><div class=\"btn btn-wx\"><img class=\"pic\" src=\""+static_base_url+"static/image/lib/weixin.jpg\" onclick=\"window.location.href=\'http://www.yizhichao.club\'\"/></div><div class=\"btn btn-phone\"><div class=\"phone\">13430332489</div></div><div class=\"btn btn-top\"></div></div>";
 	$("#top").html(tophtml);
 	$("#izl_rmenu").each(function(){
 		$(this).find(".btn-wx").mouseenter(function(){
