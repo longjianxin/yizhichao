@@ -5,7 +5,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>管理平台---商贸通 & 收银台</title>
+	<title>web os --- 管理</title>
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('static/css/lib/base.css');?>" />
 	<?php if(ENVIRONMENT == 'development'){ ?>
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('static/css/lib/bootstrap.min.css');?>" />
