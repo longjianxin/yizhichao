@@ -44,7 +44,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<div class="container">
 				<div class="container-fluid">
 					<div class="navbar-header ellipsis">
-						<a class="navbar-brand" href="javascript:;" onclick="clickMenu('<?php echo site_url($this->router->directory.'main/main');?>', -1)">
+						<a class="navbar-brand" href="javascript:;" onclick="clickMenu('<?php echo site_url(array($this->router->directory, $this->router->class, 'main'));?>', -1)">
 							<?php echo $system['site_name'];?>
 						</a>
 					</div>
@@ -319,13 +319,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				console.log(1);
 			}else{
 				console.log(2);
-				require_url = '<?php echo site_url($this->router->directory.'main/main');?>';
+				require_url = '<?php echo site_url(array($this->router->directory, $this->router->class, 'main'));?>';
 				setCookie('data_num', 0);
 				setCookie('require_url', require_url);
 			}			
 		}else{
 			console.log(3);
-			require_url = '<?php echo site_url($this->router->directory.'main/main');?>';
+			require_url = '<?php echo site_url(array($this->router->directory, $this->router->class, 'main'));?>';
 			setCookie('data_num', 0);
 			setCookie('require_url', require_url);
 		}
@@ -350,7 +350,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				'buttonClass': 'btn btn-default files col-sm-3',
 				'fileTypeExts': '*.gif; *.jpg; *.png',
 				'swf': "<?php echo base_url('static/js/uploadify/uploadify.swf')?>",
-				'uploader': "<?php echo site_url(array($this->router->directory, 'main', 'do_upload'));?>",
+				'uploader': "<?php echo site_url(array($this->router->directory, 'index', 'do_upload'));?>",
 				'onInit': function(){
 					$(".uploadify-queue").hide();
 				},
@@ -377,7 +377,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			    },
 				errorElement: 'label',
 				submitHandler: function(){
-					require_url = '<?php echo site_url(array($this->router->directory, 'main', 'chang_account'));?>';
+					require_url = '<?php echo site_url(array($this->router->directory, 'index', 'chang_account'));?>';
 					var data = formatForm($("form#chang_account").serializeArray());
 					postData(data, function(res){
 						if(res.code == 0){

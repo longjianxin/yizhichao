@@ -7,7 +7,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>登录页面---商贸通 & 收银台</title>
+	<title>web os ---login</title>
 	<?php if(ENVIRONMENT == 'development'){ ?>
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('static/css/lib/bootstrap.min.css');?>" />
 	<?php }else{ ?>
@@ -145,11 +145,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<div class="container">		
 		<ul class="nav nav-tabs" role="tablist">
 			<li role="presentation" class="uio-tab-items active" data-type="1">
-				<a href="#home" aria-controls="home" role="tab" data-toggle="tab">平台管理员入口</a>
+				<a href="#home" aria-controls="home" role="tab" data-toggle="tab">管理登录</a>
 			</li>
-			<li role="presentation" class="uio-tab-items" data-type="2">
-				<a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">代理/推广员入口</a>
-			</li> 
 		</ul>
 
 		<div class="tab-content">

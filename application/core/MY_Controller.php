@@ -130,7 +130,7 @@ class MY_Admin_Controller extends MY_Controller {
 		$this->load->config('system');
 		$system = $this->config->item('system');
 		$this->resData['system'] = $system;
-		if($this->router->class == 'main' && $this->router->method == 'index'){
+		if($this->router->class == 'index' && $this->router->method == 'index'){
 			
 		}else{			
 			$stop = (! isset($system['site_satus']) || $system['site_satus'] == 0);//TRUE FALSE

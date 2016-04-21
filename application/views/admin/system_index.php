@@ -194,7 +194,7 @@ $(function(){
 		'buttonClass': 'btn btn-default files col-sm-3',
 		'fileTypeExts': '*.gif; *.jpg; *.png',
 		'swf': "<?php echo base_url('static/js/uploadify/uploadify.swf')?>",
-		'uploader': "<?php echo site_url(array($this->router->directory, 'main', 'do_upload'));?>",
+		'uploader': "<?php echo site_url(array($this->router->directory, 'index', 'do_upload'));?>",
 		'onInit': function(){
 			$(".uploadify-queue").hide();
 		},

@@ -23,7 +23,7 @@ class Login extends MY_Normal_Controller {
 		
 		if($account == SYSTEM_ADMIN_ACCOUNT && $this->getSystemAccountPwd($password) == SYSTEM_ADMIN_PASSWORD){
 			$this->login_work_success(1, $account_type, SYSTEM_ADMIN_ACCOUNT, array('email' => '', 'header' => '', 'account' => SYSTEM_ADMIN_ACCOUNT, 'name' => SYSTEM_ADMIN_ACCOUNT));
-			$this->setSuccessResponse(array('url' => site_url(array($this->router->directory, 'main', 'index'))));
+			$this->setSuccessResponse(array('url' => site_url(array($this->router->directory, 'index', 'index'))));
 		}else{
 			$this->load->model('admin_model');
 			$row = $this->admin_model->getTableOne(array('account' => $account));
@@ -38,7 +38,7 @@ class Login extends MY_Normal_Controller {
 			}else{
 				$this->login_work_success(0, $account_type, $row['account'], $row);
 				$this->admin_model->updateTable(array('num' => $row['num'] + 1, 'last_time' => $row['login_time'], 'login_time' => now()), array('id' => $row['id']));
-				$this->setSuccessResponse(array('url' => site_url(array($this->router->directory, 'main', 'index'))));
+				$this->setSuccessResponse(array('url' => site_url(array($this->router->directory, 'index', 'index'))));
 			}
 		}
 
