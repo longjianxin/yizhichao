@@ -17,22 +17,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('static/css/scss/main.css');?>" /> 
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('static/css/lib/datetimepicker.css');?>" />
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('static/css/lib/jquery.mCustomScrollbar.min.css');?>">
-	<style type="text/css">
-	/*back-to-top css*/
-	.izl-rmenu{position:fixed; left:50%; margin-left:556px; bottom:10px; padding-bottom:73px; z-index:999; }/*background:url(<?php echo base_url('static/image/lib/r_b.png)');?> 0px bottom no-repeat;*/
-	.izl-rmenu .btn{width:72px; height:73px; margin-bottom:1px; cursor:pointer; position:relative; display: block;}
-	.izl-rmenu .btn-qq{background:url(<?php echo base_url('static/image/lib/r_qq.png');?>) 0px 0px no-repeat; background-color:#6da9de;}
-	.izl-rmenu .btn-qq:hover{background-color:#488bc7;}
-	.izl-rmenu a.btn-qq,.izl-rmenu a.btn-qq:visited{background:url(<?php echo base_url('static/image/lib/r_qq.png');?>) 0px 0px no-repeat; background-color:#6da9de; text-decoration:none; display:block;}
-	.izl-rmenu .btn-wx{background:url(<?php echo base_url('static/image/lib/r_wx.png');?>) 0px 0px no-repeat; background-color:#78c340;}
-	.izl-rmenu .btn-wx:hover{background-color:#58a81c;}
-	.izl-rmenu .btn-wx .pic{position:absolute; left:-160px; top:0px; display:none;width:160px;height:160px;}
-	.izl-rmenu .btn-phone{background:url(<?php echo base_url('static/image/lib/r_phone.');?>png) 0px 0px no-repeat; background-color:#fbb01f;}
-	.izl-rmenu .btn-phone:hover{background-color:#ff811b;}
-	.izl-rmenu .btn-phone .phone{background-color:#ff811b; position:absolute; width:160px; left:-160px; top:-1px; line-height:73px; color:#FFF; font-size:18px; text-align:center; display:none;}
-	.izl-rmenu .btn-top{background:url(<?php echo base_url('static/image/lib/r_top.pn');?>g) 0px 0px no-repeat; background-color:#666666; display:none;}
-	.izl-rmenu .btn-top:hover{background-color:#444;}
-	</style>
 	<script type="text/javascript">
 	var static_base_url = "<?php echo base_url();?>";
 	</script>
@@ -182,7 +166,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</ul>
 		</div>
 	</footer> -->
-	<div id="top"></div>
 	<div style="display: none; width:600px;overflow: hidden;padding:15px 0;" id="user">
 		<form class="form-horizontal" id="chang_account" action="" onsubmit="javascript:return false;"> 
 			<div class="form-group">
