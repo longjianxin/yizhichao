@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 $config['system'] = array (
-  'site_name' => '衣至潮',
+  'site_name' => 'k哥私房菜',
   'site_logo' => '',
   'icp_number' => '',
   'site_phone' => '',
