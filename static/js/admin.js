@@ -11,27 +11,6 @@ $(function(){
 	}
 	
 	initPageCLeftPostion();
-	/**方式一 modify:wm (需要修改样式)**/
-	/*$(window).scroll(function(){
-		initPageCLeftPostion();
-	});
-
-	function initPageCLeftPostion(){
-		if ($(window).scrollTop()<76) {
-			$(".left-layout").css({
-				"top":76-$(this).scrollTop(),
-				"height":$(".left-layout").height()+$(window).scrollTop()
-			}); 
-		}else{ 
-			if ($(window).scrollTop()>76) { //$(".header").css({"position":"fixed","top":0,"left":0,"width":"100%","z-index":99});
-				$(".left-layout").css({"top":0, "height":$(window).height()});  
-				 
-			}else{
-				$(".left-layout").css({"top":76}); 
-			}
-		}
-	}*/
- 	/**方式二 modify:wm**/
 	function initPageCLeftPostion(){
 		if ($(".left-layout").height()<$(window).height()-50) {
 			height=$(window).height()-50+$(window).scrollTop();
